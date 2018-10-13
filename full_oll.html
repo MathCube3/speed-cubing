@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Full OLL</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <h1>Full OLL</h1>
+    <p>OLL stands for, orient last layer. This is the third step to solving the Rubik's Cube using CFOP. CFOP is one of the fastest methods you can use to solve the Rubik's Cube. CFOP stands for, Cross, F2L (first 2 layers), OLL, and PLL (permute last layer). Knowing all of these OLL algorithms will help you to get by this step in solving the Rubik's a lot faster.</p>
+    <h2>OLL Cases</h2>
+    <p>These are tables of all the OLL cases you will encounter. There are fifty-seven OLL cases.</p>
+    <ul>
+      <li><a href="#edges-oriented">All Edges Oriented Correctly</a></li>
+      <li><a href="#no-edges">No Edges Oriented Correctly</a></li>
+      <li><a href="#p-shapes">P-Shapes</a></li>
+      <li><a href="#w-shapes">W-Shapes</a></li>
+      <li><a href="#L-shapes">L-Shapes</a></li>
+      <li><a href="#c-shapes">C-Shapes</a></li>
+      <li><a href="#T-shapes">T-Shapes</a></li>
+      <li><a href="#l-shapes">l-Shapes</a></li>
+      <li><a href="#square">Square Shapes</a></li>
+      <li><a href="#bolt-shapes">Bad Lightning Bolt Shapes</a></li>
+      <li><a href="#small-bolt">Small Lightning Bolt Shapes</a></li>
+      <li><a href="#fish-shapes">Fish Shapes</a></li>
+      <li><a href="#knight-shapes">Knight Shapes</a></li>
+      <li><a href="#awkward">Awkward Shapes</a></li>
+      <li><a href="#corners-oriented">All Corners Oriented</a></li>
+    </ul>
+    <h3 id="edges-oriented">All Edges Oriented Correctly</h3>
+    <table>
+      <thead>
+        <tbody>
+          <tr>
+            <td>
+              <h4>OLL 27</h4>
+              <img src="OLL_Images/oll27.jpg" alt="OLL 27">
+              <p>R, U, Ri, U, R, U2, Ri</p>
+            </td>
+            <td>
+              <h4>OLL 26</h4>
+              <img src="OLL_Images/oll26.png" alt="OLL 26">
+              <p>R, U2, Ri, Ui, R, Ui, Ri</p>
+            </td>
+            <td>
+              <h4>OLL 24</h4>
+              <img src="OLL_Images/oll24.png" alt="OLL 24">
+              <p>[r, U, Ri, Ui], [ri, F, R, Fi]</p>
+            </td>
+            <td>
+              <h4>OLL 23</h4>
+              <img src="OLL_Images/oll23.png" alt="OLL 23">
+              <p>[R2, D], [Ri, U2], [R, Di], [Ri, U2, Ri]</p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <h4>OLL 25</h4>
+              <img src="OLL_Images/oll25.png" alt="OLL 25">
+              <p>[F, Ri, Fi, r, U], [R, Ui, ri]</p>
+            </td>
+            <td>
+              <h4>OLL 22</h4>
+              <img src="OLL_Images/oll22.png" alt="OLL 22">
+              <p>[R, U2], [R2, Ui], [R2, Ui], [R2, U2, R]</p>
+            </td>
+            <td>
+              <h4>OLL 21</h4>
+              <img src="OLL_Images/oll21.png" alt="OLL 21">
+              <p>[R, U2], [Ri, Ui, R, U, Ri, Ui, R, Ui, Ri]</p>
+            </td>
+          </tr>
+        </tbody>
+      </thead>
+    </table>
+    <h3 id="no-edges">No Edges Oriented Correctly</h3>
+    <table>
+      <thead>
+        <tbody>
+          <tr>
+            <td>
+              <h4>OLL 1</h4>
+              <img src="OLL_Images/oll1.png" alt="OLL 1">
+              <p>[R, U2], [R2, F, R, Fi], U2, [Ri, F, R, Fi]</p>
+            </td>
+            <td>
+              <h4>OLL 2</h4>
+              <img src="OLL_Images/oll2.png" alt="OLL 2">
+              <p>[r, U, ri], [U2, R, U2, Ri, U2], [r, Ui, ri]</p>
+            </td>
+            <td>
+              <h4>OLL 3</h4>
+              <img src="OLL_Images/oll3.png" alt="OLL 3">
+              <p>f, [R, U, Ri, Ui], fi, Ui, F, [R, U, Ri, Ui] Fi</p>
+            </td>
+            <td>
+              <h4>OLL 4</h4>
+              <img src="OLL_Images/oll4.png" alt="OLL 4">
+              <p>f, [R, U, Ri, Ui], fi, U, F, [R, U, Ri, Ui] Fi</p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <h4>OLL 17</h4>
+              <img src="OLL_Images/oll17.png" alt="OLL 17">
+              <p>[R, U, Ri, U], [Ri, F, R, Fi], U2, [Ri, F, R, Fi]</p>
+            </td>
+            <td>
+              <h4>OLL 18</h4>
+              <img src="OLL_Images/oll18.png" alt="OLL 18">
+              <p>[R, U2], [R2, F, R, Fi], U2, [Mi, U, R, Ui, ri]</p>
+            </td>
+            <td>
+              <h4>OLL 19</h4>
+              <img src="OLL_Images/oll19.png" alt="OLL 19">
+              <p>M, U, [R, U, Ri, Ui], Mi, [Ri, F, R, Fi]</p>
+            </td>
+            <td>
+              <h4>OLL 20</h4>
+              <img src="OLL_Images/oll20.png" alt="OLL 20">
+              <p>r, U, Ri, Ui, M2, U, R, Ui, Ri, Ui, Mi</p>
+              <!-- Could also use, [Mi, U2, M], U2, [Mi, Ui, M], U2, [Mi, U2, M] -->
+            </td>
+          </tr>
+        </tbody>
+      </thead>
+    </table>
+    <h3 id="p-shapes">P-Shapes</h3>
+    <table>
+      <thead>
+        <tbody>
+          <tr>
+            <td>
+              <h4>OLL 31</h4>
+              <img src="OLL_Images/oll31.png" alt="OLL 31">
+              <p>[Ri, Ui], F, [U, R, Ui, Ri], Fi, R</p>
+            </td>
+            <td>
+              <h4>OLL 32</h4>
+              <img src="OLL_Images/oll32.png" alt="OLL 32">
+              <p>[R, U, Bi], Ui, Ri, U, [R, B, Ri']</p>
+            </td>
+            <td>
+              <h4>OLL 44</h4>
+              <img src="OLL_Images/oll44.png" alt="OLL 44">
+              <p>F, [U, R, Ui, Ri], Fi</p>
+            </td>
+            <td>
+              <h4>OLL 43</h4>
+              <img src="OLL_Images/oll43.png" alt="OLL 43">
+              <p>Ri, [Ui, Fi, U, F], R</p>
+            </td>
+          </tr>
+        </tbody>
+      </thead>
+    </table>
+    <h3 id="w-shapes">W-Shapes</h3>
+    <table>
+      <thead>
+        <tbody>
+          <tr>
+            <td>
+              <h4>OLL 36</h4>
+              <img src="OLL_Images/oll36.png" alt="OLL 36">
+              <p>[Li, Ui, L, Ui], [Li, U, L, U], [L, Fi, Li, F]</p>
+            </td>
+            <td>
+              <h4>OLL 38</h4>
+              <img src="OLL_Images/oll38.png" alt="OLL 38">
+              <p>[R, U, Ri, U], [R, Ui, Ri, Ui], [Ri, F, R, Fi]</p>
+            </td>
+          </tr>
+        </tbody>
+      </thead>
+    </table>
+    <h3 id="L-shapes">L-Shapes</h3>
+    <table>
+      <thead>
+        <tbody>
+          <tr>
+            <td>
+              <h4>OLL 47</h4>
+              <img src="OLL_Images/oll47.png" alt="OLL 47">
+              <p>Fi, [Li, Ui, L, U], [Li, Ui, L, U], F</p>
+            </td>
+            <td>
+              <h4>OLL 48</h4>
+              <img src="OLL_Images/oll48.png" alt="OLL 48">
+              <p>F, [R, U, Ri, Ui], [R, U, Ri, Ui], Fi</p>
+            </td>
+            <td>
+              <h4>OLL 49</h4>
+              <img src="OLL_Images/oll49.png" alt="OLL 49">
+              <p>[r, Ui], [r2, U, r2, U], [r2, Ui, r]</p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <h4>OLL 50</h4>
+              <img src="OLL_Images/oll50.png" alt="OLL 50">
+              <p>[Ri, F], [R2, Bi, R2, Fi], [R2, B, Ri]</p>
+            </td>
+            <td>
+              <h4>OLL 53</h4>
+              <img src="OLL_Images/oll53.png" alt="OLL 53">
+              <p>[li, Ui, L, Ui], [Li, U, L, Ui], [Li, U2, l]</p>
+            </td>
+            <td>
+              <h4>OLL 54</h4>
+              <img src="OLL_Images/oll54.png" alt="OLL 53">
+              <p>[r, U2], [Ri, Ui, R, U], [Ri, Ui, R, Ui], ri</p>
+            </td>
+          </tr>
+        </tbody>
+      </thead>
+    </table>
+    <h3 id="c-shapes">C-Shapes</h3>
+    <table>
+      <thead>
+        <tbody>
+          <tr>
+            <td>
+              <h4>OLL 46</h4>
+              <img src="OLL_Images/oll46.png" alt="OLL 46">
+              <p>[Ri, Ui], [Ri, F, R, Fi], [U, R]</p>
+            </td>
+            <td>
+              <h4>OLL 34</h4>
+              <img src="OLL_Images/oll34.png" alt="OLL 34">
+              <p>[R, U, Ri, Ui], yi, [ri, Ui, R, U, Mi]</p>
+            </td>
+          </tr>
+        </tbody>
+      </thead>
+    </table>
+    <h3 id="T-shapes">T-Shapes</h3>
+    <table>
+      <thead>
+        <tbody>
+          <tr>
+            <td>
+              <h4>OLL 45</h4>
+              <img src="OLL_Images/oll45.png" alt="OLL 45">
+              <p>F, [R, U, Ri, Ui], Fi</p>
+            </td>
+            <td>
+              <h4>OLL 33</h4>
+              <img src="OLL_Images/oll33.png" alt="OLL 33">
+              <p>[R, U, Ri, Ui], [Ri, F, R, Fi]</p>
+            </td>
+          </tr>
+        </tbody>
+      </thead>
+    </table>
+    <h3 id="l-shapes">l-Shapes</h3>
+    <table>
+      <thead>
+        <tbody>
+          <tr>
+            <td>
+              <h4>OLL 51</h4>
+              <img src="OLL_Images/oll51.png" alt="OLL 51">
+              <p>F, [U, R, Ui, Ri], [U, R, Ui, Ri], Fi</p>
+            </td>
+            <td>
+              <h4>OLL 52</h4>
+              <img src="OLL_Images/oll52.png" alt="OLL 52">
+              <p>[R, U, Ri, U], [R, Ui], [B, Ui, Bi, Ri]</p>
+            </td>
+            <td>
+              <h4>OLL 55</h4>
+              <img src="OLL_Images/oll55.png" alt="OLL 55">
+              <p>[Ri, F, R], U, [R, Ui, R2, Fi], [R2, Ui, Ri], U, [R, U, Ri]</p>
+            </td>
+            <td>
+              <h4>OLL 56</h4>
+              <img src="OLL_Images/oll56.png" alt="OLL 56">
+              <p>ri, Ui, r, [Ui, Ri, U, R], [Ui, Ri, U, R], ri, U, r</p>
+            </td>
+          </tr>
+        </tbody>
+      </thead>
+    </table>
+    <h3 id="square">Square Shapes</h3>
+    <table>
+      <thead>
+        <tbody>
+          <tr>
+            <td>
+              <h4>OLL 5</h4>
+              <img src="OLL_Images/oll5.png" alt="OLL 5">
+              <p>li, U2, L, U, Li, U, l</p>
+            </td>
+            <td>
+              <h4>OLL 6</h4>
+              <img src="OLL_Images/oll6.png" alt="OLL 6">
+              <p>r, U2, Ri, Ui, R, Ui, ri</p>
+            </td>
+          </tr>
+        </tbody>
+      </thead>
+    </table>
+    <h3 id="bolt-shapes">Bad Lightning Bolt Shapes</h3>
+    <table>
+      <thead>
+        <tbody>
+          <tr>
+            <td>
+              <h4>OLL 39</h4>
+              <img src="OLL_Images/oll39.png" alt="OLL 39">
+              <p>[L, Fi], [Li, Ui, L, U], F, Ui, Li</p>
+            </td>
+            <td>
+              <h4>OLL 40</h4>
+              <img src="OLL_Images/oll40.png" alt="OLL 40">
+              <p>[Ri, F], [R, U, Ri, Ui], Fi, U, R</p>
+            </td>
+          </tr>
+        </tbody>
+      </thead>
+    </table>
+    <h3 id="small-bolt">Small Lightning Bolt Shapes</h3>
+    <table>
+      <thead>
+        <tbody>
+          <tr>
+            <td>
+              <h4>OLL 7</h4>
+              <img src="OLL_Images/oll7.png" alt="OLL 7">
+              <p>r, U, Ri, U, R, U2, ri</p>
+            </td>
+            <td>
+              <h4>OLL 8</h4>
+              <img src="OLL_Images/oll8.png" alt="OLL 8">
+              <p>li, Ui, L, Ui, Li, U2, l</p>
+            </td>
+            <td>
+              <h4>OLL 11</h4>
+              <img src="OLL_Images/oll11.png" alt="OLL 11">
+              <p>M, [R, U, Ri, U, R, U2, Ri], U, Mi</p>
+            </td>
+            <td>
+              <h4>OLL 12</h4>
+              <img src="OLL_Images/oll12.png" alt="OLL 12">
+              <p>Mi, [Ri, Ui, R, Ui, Ri, U2, R], Ui, M</p>
+            </td>
+          </tr>
+        </tbody>
+      </thead>
+    </table>
+    <h3 id="fish-shapes">Fish Shapes</h3>
+    <table>
+      <thead>
+        <tbody>
+          <tr>
+            <td>
+              <h4>OLL 9</h4>
+              <img src="OLL_Images/oll9.png" alt="OLL 9">
+              <p>[R, U, Ri, Ui, Ri, F], [R2, U, Ri, Ui, Fi]</p>
+            </td>
+            <td>
+              <h4>OLL 10</h4>
+              <img src="OLL_Images/oll10.png" alt="OLL 10">
+              <p>[R, U, Ri, U], [Ri, F, R, Fi], [R, U2, Ri]</p>
+            </td>
+            <td>
+              <h4>OLL 35</h4>
+              <img src="OLL_Images/oll35.png" alt="OLL 35">
+              <p>[R, U2], [R2, F], [R, Fi, R, U2, Ri]</p>
+            </td>
+            <td>
+              <h4>OLL 37</h4>
+              <img src="OLL_Images/oll37.png" alt="OLL 37">
+              <p>F, [R, Ui], [Ri, Ui, R, U], [Ri, Fi]</p>
+            </td>
+          </tr>
+        </tbody>
+      </thead>
+    </table>
+    <h3 id="knight-shapes">Knight Shapes</h3>
+    <table>
+      <thead>
+        <tbody>
+          <tr>
+            <td>
+              <h4>OLL 13</h4>
+              <img src="OLL_Images/oll13.png" alt="OLL 13">
+              <p>F, U, R, Ui, R2, Fi, R, U, R, Ui, Ri</p>
+            </td>
+            <td>
+              <h4>OLL 14</h4>
+              <img src="OLL_Images/oll14.png" alt="OLL 14">
+              <p>[Ri, F], [R, U, Ri, Fi, R], [F, Ui ,Fi]</p>
+            </td>
+            <td>
+              <h4>OLL 15</h4>
+              <img src="OLL_Images/oll15.png" alt="OLL 15">
+              <p>[li, Ui, l], [Li, Ui, L, U], [li, U, l]</p>
+            </td>
+            <td>
+              <h4>OLL 16</h4>
+              <img src="OLL_Images/oll16.png" alt="OLL 16">
+              <p>[r, U, ri], [R, U, Ri, Ui], [r, Ui, ri]</p>
+            </td>
+          </tr>
+        </tbody>
+      </thead>
+    </table>
+    <h3 id="awkward">Awkward Shapes</h3>
+    <table>
+      <thead>
+        <tbody>
+          <tr>
+            <td>
+              <h4>OLL 29</h4>
+              <img src="OLL_Images/oll29.png" alt="OLL 29">
+              <p>r2, Di, [r, U, ri], D, r2, Ui, [ri, Ui, r]</p>
+            </td>
+            <td>
+              <h4>OLL 30</h4>
+              <img src="OLL_Images/oll30.png" alt="OLL 30">
+              <p>[F, Ri, F], [R2, Ui, Ri, Ui], [R, U, Ri], F2</p>
+            </td>
+            <td>
+              <h4>OLL 41</h4>
+              <img src="OLL_Images/oll41.png" alt="OLL 41">
+              <p>[R, U, Ri, U, R, U2, Ri], [F, R, U, Ri, Ui, Fi]</p>
+            </td>
+            <td>
+              <h4>OLL 42</h4>
+              <img src="OLL_Images/oll42.png" alt="OLL 42">
+              <p>[Ri, Ui, R, Ui, Ri, U2, R], [F, R, U, Ri, Ui, Fi]</p>
+            </td>
+          </tr>
+        </tbody>
+      </thead>
+    </table>
+    <h3 id="corners-oriented">All Corners Oriented</h3>
+    <table>
+      <thead>
+        <tbody>
+          <tr>
+            <td>
+              <h4>OLL 28</h4>
+              <img src="OLL_Images/oll28.png" alt="OLL 28">
+              <p>Mi, Ui, M, U2, Mi, Ui, M</p>
+            </td>
+            <td>
+              <h4>OLL 57</h4>
+              <img src="OLL_Images/oll57.png" alt="OLL 57">
+              <p>[R, U, Ri, Ui], [Mi, U, R, Ui] ri</p>
+            </td>
+          </tr>
+        </tbody>
+      </thead>
+    </table>
+  </body>
+</html>
